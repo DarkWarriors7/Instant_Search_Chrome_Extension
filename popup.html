@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Search Engine Selector</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Select Your Preferred Search Platform:</h2>
+    <div class="select">
+      <select id="searchEngine">
+        <option value="https://www.google.com/search?q=" selected><i class="fa-brands fa-youtube"></i>Google</option>
+        <option value="https://www.bing.com/search?q=">Bing</option>
+        <option value="http://www.reddit.com/search?q=">Reddit</option>
+        <option value="https://www.quora.com/search?q=">Quora</option>
+        <option value="https://www.youtube.com/results?search_query=">YouTube</option>
+      </select>
+    </div>
+  </div>
+  <div class="btn">
+    <button id="showHistoryBtn">Show History</button>
+    <ul id="historyList" style="display: none;"></ul>
+  </div>
+
+</body>
+
+</html>

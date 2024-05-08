@@ -1,0 +1,93 @@
+body {
+  height: 250px;
+  width: 300px;
+  color: #49494b;
+  background: #bd8c7d;
+
+}
+
+:root {
+  --gray: #8e8e90;
+  --darkgray: #49494b;
+}
+
+select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+
+  background-color: #646466;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #f39c12;
+}
+
+.btn {
+  color: #49494b;
+  font-weight: bold;
+  font-size: medium;
+  position: absolute;
+  top: 80%;
+  transform:
+    translate(5%, -50%);
+
+}
+
+#showHistoryBtn {
+  background-color: #646466;
+  color: white;
+  padding: 5px;
+  border-color: #49494b;
+  border-radius: 7px;
+}
+
+#showHistoryBtn:hover {
+  background-color: #605c5c;
+}
+
+#historyList {
+  position: relative;
+  left: -15%;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform:
+    translate(-50%, -70%);
+}

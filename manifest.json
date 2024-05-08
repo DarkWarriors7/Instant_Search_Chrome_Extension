@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Instant Search",
+  "description": "Select any text on the web page and search this text directly on your favourite platform!",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Instant Search"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ]
+}
